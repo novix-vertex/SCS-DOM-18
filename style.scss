@@ -1,14 +1,27 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
     height: 100%;
-    padding:100%;
+    width: 100%;
+    cursor: none;
+    
+    background: url('https://i.pinimg.com/originals/38/8b/e2/388be24848b1bbb4388a4352f0af1a5c.gif');
+    background-position: center;
+    background-size: cover;
 }
-main{
-    height:100%;
-    padding:100%;
-    background-color: #212121;   
+
+main {
+    height: 100%;
+    width: 100%;
+    position:relative;
+    img {
+        height: 6rem;
+        width: 6rem;
+        position:absolute;
+    }
 }
