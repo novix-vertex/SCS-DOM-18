@@ -9,7 +9,8 @@ body {
   height: 100%;
   width: 100%;
   cursor: none;
-  background: url("https://i.pinimg.com/originals/38/8b/e2/388be24848b1bbb4388a4352f0af1a5c.gif");
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWEyAQTuwJuKkIkGOqdbmcl9GrltLRmOI48A&s");
+  backdrop-filter: 5;
   background-position: center;
   background-size: cover;
 }
@@ -18,9 +19,19 @@ main {
   height: 100%;
   width: 100%;
   position: relative;
+  transition: all ease 0.3s;
 }
-main img {
+main .thor {
   height: 6rem;
   width: 6rem;
   position: absolute;
+  opacity: 0;
+}
+main .gorr {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  height: 50%;
+  transition: all ease 0.3s;
 }/*# sourceMappingURL=style.css.map */
