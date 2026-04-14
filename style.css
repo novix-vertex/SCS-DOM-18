@@ -8,7 +8,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  cursor: none;
+  cursor: pointer;
   background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWEyAQTuwJuKkIkGOqdbmcl9GrltLRmOI48A&s");
   backdrop-filter: 5;
   background-position: center;

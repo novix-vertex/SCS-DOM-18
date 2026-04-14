@@ -1,13 +1,13 @@
 let main = document.querySelector("main");
 let thor = document.querySelector(".thor");
 let gorr = document.querySelector(".gorr");
+let body = document.querySelector("body");
 
 
-let state = 0;
+let state = -1;
 
 setTimeout(function () {
-    gorr.style.top = "0%";
-
+    state = 0;
 }, 1000);
 
 let horror = new Audio("horror.mp3");
@@ -22,6 +22,7 @@ main.addEventListener("click", function () {
 
     if (state == 0) {
 
+        gorr.style.top = "0%";
         horror.play();
         setTimeout(function () {
             state = 1;
@@ -40,8 +41,10 @@ main.addEventListener("click", function () {
         thunder.play();
 
         thor.style.opacity = 1;
+
         thor.style.bottom = "200px";
         thor.style.right = "200px";
+        body.style.cursor = "none";
         state = 2;
     }
 
@@ -70,6 +73,7 @@ main.addEventListener("click", function () {
                 }
 
             }, 2000);
+
             state = 4;
         }
     }
@@ -83,7 +87,6 @@ main.addEventListener("mousemove", function (dets) {
     thor.style.transform = "translate(-50%,-50%)";
     thor.style.top = dets.y + "px";
     thor.style.left = dets.x + "px";
-
 
 
     thor_x = dets.x;
