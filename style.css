@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "horror-font";
+  src: url(Death\ Shadow\ Demo.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +24,29 @@ main {
   width: 100%;
   position: relative;
   transition: all ease 0.3s;
+}
+main h2,
+main h3, main h4 {
+  font-family: "horror-font";
+  font-size: 60px;
+  color: #222;
+  letter-spacing: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+main h3 {
+  opacity: 0;
+  background: linear-gradient(to right, white, blue, white, crimson, blue, white, crimson, white);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+main h4 {
+  opacity: 0;
+  color: #fff;
 }
 main .thor {
   height: 6rem;

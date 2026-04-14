@@ -2,6 +2,9 @@ let main = document.querySelector("main");
 let thor = document.querySelector(".thor");
 let gorr = document.querySelector(".gorr");
 let body = document.querySelector("body");
+let h2 = document.querySelector("h2");
+let h3 = document.querySelector("h3");
+let h4 = document.querySelector("h4");
 
 
 let state = -1;
@@ -24,33 +27,43 @@ main.addEventListener("click", function () {
 
         gorr.style.top = "0%";
         horror.play();
+        h2.style.opacity = 0;
         setTimeout(function () {
             state = 1;
+            h3.style.opacity = 1;
         }, 3000);
     }
 
     if (state == 1) {
 
-        document.body.style.background = "url('https://i.pinimg.com/originals/38/8b/e2/388be24848b1bbb4388a4352f0af1a5c.gif')";
-        document.body.style.backgroundPosition = "center";
-        document.body.style.backgroundSize = "cover";
+        setTimeout(function () {
+            document.body.style.background = "url('https://i.pinimg.com/originals/38/8b/e2/388be24848b1bbb4388a4352f0af1a5c.gif')";
+            document.body.style.backgroundPosition = "center";
+            document.body.style.backgroundSize = "cover";
 
-        horror.muted = true;
-        horror.pause();
+            horror.muted = true;
+            horror.pause();
 
-        thunder.play();
+            h3.style.opacity = 0;
+            thunder.play();
+        }, 300);
+        setTimeout(function () {
 
-        thor.style.opacity = 1;
+            h4.style.opacity = 1;
 
-        thor.style.bottom = "200px";
-        thor.style.right = "200px";
-        body.style.cursor = "none";
-        state = 2;
+            thor.style.opacity = 1;
+
+            thor.style.bottom = "200px";
+            thor.style.right = "200px";
+            body.style.cursor = "none";
+            state = 2;
+        }, 700);
+
     }
 
     if (state == 3) {
-        console.log("gorr");
         if (state == 3) {
+            h4.style.opacity = 0;
             gorr.style.top = "-50%";
             thunder.muted = true;
             thunder.pause();
