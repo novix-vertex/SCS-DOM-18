@@ -37,7 +37,7 @@ main.addEventListener("click", function () {
     if (state == 1) {
 
         setTimeout(function () {
-            document.body.style.background = "url('https://i.pinimg.com/originals/38/8b/e2/388be24848b1bbb4388a4352f0af1a5c.gif')";
+            document.body.style.background = "url('./images/thunder.gif')";
             document.body.style.backgroundPosition = "center";
             document.body.style.backgroundSize = "cover";
 
@@ -75,7 +75,7 @@ main.addEventListener("click", function () {
 
                 for (let i = 1; i <= 100; i++) {
                     spot = document.createElement("img");
-                    spot.src = "https://www.freeiconspng.com/uploads/blood-spatter-high-velocity-blunt-spatter-png-20.png";
+                    spot.src = "./images/blood.webp";
                     spot.style.position = "absolute";
                     spot.style.top = Math.floor(Math.random() * window.innerHeight) + "px";
                     spot.style.left = Math.floor(Math.random() * window.innerWidth) + "px";

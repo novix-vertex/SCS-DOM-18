@@ -13,7 +13,7 @@ body {
   height: 100%;
   width: 100%;
   cursor: pointer;
-  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWEyAQTuwJuKkIkGOqdbmcl9GrltLRmOI48A&s");
+  background: url("./images/background.webp");
   backdrop-filter: 5;
   background-position: center;
   background-size: cover;
